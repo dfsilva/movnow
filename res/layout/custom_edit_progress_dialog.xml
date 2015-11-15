@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/id_tv_title" android:background="@drawable/custom_dialog_title_bg" android:paddingLeft="8.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/custom_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/id_rl_edit_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+            <EditText android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/id_et_text" android:background="@drawable/custom_et_dialog_editview_bg" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:maxLength="10" android:layout_centerVertical="true" android:imeOptions="actionDone|flagNoExtractUi" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/id_ll_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+            <Button android:textSize="18.0sp" android:textColor="@color/settings_items_text_color_selector" android:gravity="center" android:id="@id/id_btn_edit_cancel" android:background="@drawable/healthy_settings_person_tv_edit_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <View android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            <Button android:textSize="18.0sp" android:textColor="@color/settings_items_text_color_selector" android:gravity="center" android:id="@id/id_btn_edit_sure" android:background="@drawable/healthy_settings_person_tv_edit_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

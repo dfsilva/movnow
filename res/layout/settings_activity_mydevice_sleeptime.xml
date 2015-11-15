@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bmi_layout_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/rl_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_setting_sleeptime_begin" style="@style/style_setting_sleeptime_view" />
+    <EditText android:gravity="center" android:id="@id/id_setting_sleeptime_editbegin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:editable="false" style="@style/style_setting_sleeptime_edit" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_setting_sleeptime_end" style="@style/style_setting_sleeptime_view" />
+    <EditText android:gravity="center" android:id="@id/id_setting_sleeptime_editend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:editable="false" style="@style/style_setting_sleeptime_edit" />
+    <TextView android:id="@id/setting_sleeptime_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_setting_sleeptime_tips" style="@style/style_setting_sleeptime_view" />
+</LinearLayout>

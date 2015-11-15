@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/id_food_manager_btn_ret" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回" style="@style/style_titlebar_left_1" />
+        <Button android:id="@id/id_food_manager_btn_take_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="照相图标" style="@style/style_titlebar_right_1" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <GridView android:id="@id/id_food_manager_gv_foodlist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="2" style="@style/style_titlebar_right_1" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_weight="2.0">
+        <TextView android:id="@id/id_food_manager_tv_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" style="@style/style_setting_sleeptime_view" />
+        <TextView android:gravity="center" android:id="@id/id_food_manager_tv_expression" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_food_manager_express" android:layout_above="@id/id_food_manager_tv_number" style="@style/style_setting_sleeptime_view" />
+        <TextView android:id="@id/id_food_manager_tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_food_manager_date" android:layout_above="@id/id_food_manager_tv_expression" style="@style/style_setting_sleeptime_view" />
+    </RelativeLayout>>
+</LinearLayout>

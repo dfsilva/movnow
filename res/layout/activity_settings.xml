@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/q2_bg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/cs_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <com.veclink.movnow_q2.view.SettingsItemView android:id="@id/si_my_devices" android:background="@drawable/remind_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.veclink.movnow_q2.view.SettingsItemView android:id="@id/si_my_target" android:background="@drawable/remind_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.veclink.movnow_q2.view.SettingsItemView android:id="@id/si_sport_type" android:background="@drawable/remind_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.veclink.movnow_q2.view.SettingsItemView android:id="@id/si_settings" android:background="@drawable/remind_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.veclink.movnow_q2.view.SettingsItemView android:id="@id/si_login" android:background="@drawable/remind_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="@dimen/text_size_h5" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_link_and_syn" android:background="@drawable/login_btn_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/str_settings_con_syn" />
+    </LinearLayout>
+</LinearLayout>

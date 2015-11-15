@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/cs_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/male" android:background="@drawable/regisiter_bmi_male_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/female" android:background="@drawable/regisiter_bmi_female_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/person_birthday_layout" android:background="@drawable/remind_list_item_selector" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:text="@string/cs_birthday" style="@style/regisiter_bmi_label_text_style" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/birthday" style="@style/regisiter_bmi_value_text_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/person_weight_layout" android:background="@drawable/remind_list_item_selector" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:text="@string/cs_weight" style="@style/regisiter_bmi_label_text_style" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/person_weight" style="@style/regisiter_bmi_value_text_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/person_height_layout" android:background="@drawable/remind_list_item_selector" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:text="@string/cs_height" style="@style/regisiter_bmi_label_text_style" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/person_height" style="@style/regisiter_bmi_value_text_style" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_h5" android:textColor="@color/regisiter_bmi_remind_tip_textcolor" android:id="@id/bmi_tip" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cs_register_bmi_tip" />
+</LinearLayout>

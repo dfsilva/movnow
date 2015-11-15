@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/bmi_wheelview_item_textsize" android:textColor="@color/bmi_wheelview_textcolor" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/bmi_wheelview_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weekStrings">
+        <item>Sun,</item>
+        <item>Mon,</item>
+        <item>Tue,</item>
+        <item>Wed,</item>
+        <item>Thu,</item>
+        <item>Fri,</item>
+        <item>Sat,</item>
+    </string-array>
+    <string-array name="height_unit_strarray">
+        <item>Ft.</item>
+        <item>M</item>
+    </string-array>
+    <string-array name="weight_unit_strarray">
+        <item>Pound</item>
+        <item>KG</item>
+    </string-array>
+</resources>

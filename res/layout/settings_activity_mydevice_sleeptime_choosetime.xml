@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/partline" android:background="@color/add_remind_partline_color" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <Button android:id="@id/id_sleeptime_choosetime_save" android:background="@drawable/choose_time_dialog_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/add_remind_partline_magin" android:layout_below="@id/partline" style="@style/style_titlebar_right_1" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wheelviews_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/id_sleeptime_choosetime_save">
+        <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_horizontal" android:id="@id/cs_hour_wheelview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_horizontal" android:id="@id/cs_minute_wheelview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" />
+    </LinearLayout>
+</RelativeLayout>

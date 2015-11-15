@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#eeeeeeee" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/rl_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.veclink.movnow_q2.view.HeartRateBarGraphView android:id="@id/heartRateBarGraphView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ExpandableListView android:scrollbarStyle="outsideOverlay" android:id="@id/exlistView" android:paddingLeft="24.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="5.0dip" />
+</LinearLayout>

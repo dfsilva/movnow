@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bmi_layout_bg_color" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/rel_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/stub_choose_birthday_layout" layout="@layout/settings_bmi_choose_birthday_layout" />
+    <include android:id="@id/stub_choose_sex_layout" android:visibility="gone" layout="@layout/settings_bmi_choose_sex_layout" />
+    <include android:id="@id/stub_choose_height_layout" android:visibility="gone" layout="@layout/settings_bmi_choose_user_height_layout" />
+    <include android:id="@id/stub_choose_weight_layout" android:visibility="gone" layout="@layout/settings_bmi_choose_user_weight_layout" />
+    <include android:id="@id/stub_choose_result_layout" android:visibility="gone" layout="@layout/settings_bmi_show_result_layout" />
+</LinearLayout>

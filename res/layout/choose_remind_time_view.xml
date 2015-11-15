@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/add_remind_title_textsize" android:textColor="@color/add_remind_title_textcolor" android:id="@id/cs_remind_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/add_remind_title_magin_left" android:layout_marginTop="@dimen/add_remind_title_magin_top" android:text="@string/cs_add_water_clock_remind" />
+    <View android:id="@id/partline" android:background="@color/add_remind_partline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/add_remind_partline_magin" android:layout_below="@id/cs_remind_title" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wheelviews_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/partline">
+        <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_horizontal" android:id="@id/cs_hour_wheelview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_horizontal" android:id="@id/cs_minute_wheelview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" />
+    </LinearLayout>
+</RelativeLayout>

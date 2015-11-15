@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_h4" android:textColor="@color/q2_text_dark_blue_color" android:layout_gravity="top|center" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/remind_progress_layout_margin_top_distance">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cs_water_clock_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.veclink.movnow_q2.view.RemindProgressBar android:layout_gravity="center" android:id="@id/water_remindprogress" android:background="@drawable/water_remind_progress_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:gravity="center" android:text="@string/cs_water_clock" android:singleLine="true" style="@style/remind_progress_title_text_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cs_sitting_remind_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.veclink.movnow_q2.view.RemindProgressBar android:layout_gravity="center" android:id="@id/sitting_remindprogress" android:background="@drawable/sitting_remind_progress_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:text="@string/cs_sitting_remind" style="@style/remind_progress_title_text_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/remind_progress_layout_margin_top_distance">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cs_BMI_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.veclink.movnow_q2.view.RemindProgressBar android:layout_gravity="center" android:id="@id/bmi_remindprogress" android:background="@drawable/bmi_remind_progress_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:text="@string/cs_BMI" style="@style/remind_progress_title_text_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cs_wake_up_remind_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.veclink.movnow_q2.view.RemindProgressBar android:layout_gravity="center" android:id="@id/wakeup_remindprogress" android:background="@drawable/wakeup_remind_progress_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:text="@string/cs_wake_up_remind" style="@style/remind_progress_title_text_style" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

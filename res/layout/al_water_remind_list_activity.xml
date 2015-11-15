@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/water_remind_list_bg_color" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/cs_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/cs_listview" android:padding="@dimen/remind_list_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="@dimen/remind_list_divideer_height" />
+</LinearLayout>

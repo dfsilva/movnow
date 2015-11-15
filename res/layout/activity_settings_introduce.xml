@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/q2_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/cs_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+            <TextView android:textSize="@dimen/text_size_h4" android:textColor="@color/q2_text_dark_blue_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_introduce_1" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/introduce_img1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/introduce_1" />
+            <TextView android:textSize="@dimen/text_size_h4" android:textColor="@color/q2_text_dark_blue_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_introduce_2" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/introduce_img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/introduce_2" />
+            <TextView android:textSize="@dimen/text_size_h4" android:textColor="@color/q2_text_dark_blue_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_introduce_3" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/introduce_img3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/introduce_3" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

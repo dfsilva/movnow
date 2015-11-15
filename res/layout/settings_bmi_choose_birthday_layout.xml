@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/choose_birthday_layout" android:background="@color/bmi_layout_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout">
+        <TextView android:textSize="@dimen/bmi_choose_title_textsize" android:textColor="@color/bmi_choose_title_textcolor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/bmi_choose_birthy_title" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_age_point" />
+            <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@id/year_wheelview" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@id/month_wheelview" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@id/day_wheelview" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/bmi_boottom_btn_style">
+        <Button android:id="@id/birthday_next" android:background="@drawable/bmi_setting_next_step_btn_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onClick" />
+    </LinearLayout>
+</RelativeLayout>

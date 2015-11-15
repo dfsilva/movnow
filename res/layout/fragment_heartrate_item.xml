@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android_custom="http://schemas.android.com/apk/res/com.veclink.movnow.healthy_q2">
+    <TextView android:textSize="@dimen/text_size_h4" android:textColor="@color/q2_text_dark_blue_color" android:layout_gravity="center_horizontal" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/rl_con_syn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <com.veclink.movnow_q2.view.RoundProgressBar android:id="@id/round" android:layout_width="wrap_content" android:layout_height="wrap_content" android_custom:roundColor="@color/q2_text_dark_blue_color" android_custom:roundProgressColor="@color/q2_text_orange_color" android_custom:healthyRoundWidth="5.0dip" android_custom:textColor="#ff9a32cd" android_custom:textSize="18.0sp" android_custom:textIsDisplayable="false" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/inside_circle_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_size_h4" android:textColor="@color/q2_text_dark_blue_color" android:gravity="center" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/str_intime_heart_reate" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_h1" android:textColor="@color/q2_text_orange_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_intime_heart_rate" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_h4" android:textColor="@color/q2_text_orange_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/str_click_start" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

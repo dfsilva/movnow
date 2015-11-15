@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/partline" android:background="@color/add_remind_partline_color" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <Button android:id="@id/id_sleeptime_choosetime_save" android:background="@drawable/choose_time_dialog_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/add_remind_partline_magin" android:layout_below="@id/partline" style="@style/style_titlebar_right_1" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wheelviews_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/id_sleeptime_choosetime_save">
+        <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_horizontal" android:id="@id/wl_select_remind_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_h3" android:textColor="@color/q2_text_orange_color" android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="S" />
+    </LinearLayout>
+</RelativeLayout>

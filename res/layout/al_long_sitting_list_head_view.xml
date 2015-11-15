@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/setting_long_sittting_time_layout" android:background="@drawable/remind_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/water_remind_list_item_title_textsize" android:textColor="@color/water_remind_list_item_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/cs_start_end_long_stting_time" />
+        <TextView android:textSize="@dimen/water_remind_list_item_textsize" android:textColor="@color/remind_tip_textcolor" android:id="@id/start_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="9:00-22:00" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/water_remind_list_item_textsize" android:textColor="@color/remind_tip_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="@dimen/long_sitting_time_remind_tip_maginBottom" android:text="@string/cs_long_sitting_time_remind_tip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_select_wake_up_time" android:background="@drawable/remind_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_wake_up_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/cs_thirty_minute_stand_up" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Switch android:textColor="@color/white" android:textColorHighlight="@color/white" android:id="@id/cs_turn_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:checked="false" android:textOn="@string/str_open" android:textOff="@string/str_close" android:thumb="@drawable/transparent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:switchTextAppearance="@style/switchTextAppearance" android:track="@drawable/switch_bg" android:textAlignment="6" />
+    </RelativeLayout>
+</LinearLayout>

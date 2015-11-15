@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/comment_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/BasicTextSize" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/str_share_to" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/title">
+        <TextView android:textSize="@dimen/BasicTextSize" android:textColor="@color/share_dialog_text_color_selector" android:id="@id/share_to_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/sinaweibo" android:drawableTop="@drawable/share_to_sina_btn_bg" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="@dimen/BasicTextSize" android:textColor="@color/share_dialog_text_color_selector" android:id="@id/share_to_wxfriend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/wechatmoments" android:drawableTop="@drawable/share_to_wxfriend_btn_bg" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="@dimen/BasicTextSize" android:textColor="@color/share_dialog_text_color_selector" android:id="@id/share_to_facebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/facebook" android:drawableTop="@drawable/share_to_facebook_btn_bg" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="@dimen/BasicTextSize" android:textColor="@color/share_dialog_text_color_selector" android:id="@id/share_to_twitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/twitter" android:drawableTop="@drawable/share_to_twitter_btn_bg" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

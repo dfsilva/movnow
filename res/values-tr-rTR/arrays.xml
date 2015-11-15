@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weekStrings">
+        <item>Pzr,</item>
+        <item>Pzt,</item>
+        <item>Salı,</item>
+        <item>Çrş,</item>
+        <item>Prş,</item>
+        <item>Cuma,</item>
+        <item>Cts,</item>
+    </string-array>
+    <string-array name="height_unit_strarray">
+        <item>ft</item>
+        <item>m</item>
+    </string-array>
+    <string-array name="weight_unit_strarray">
+        <item>lb</item>
+        <item>kg</item>
+    </string-array>
+</resources>

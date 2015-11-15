@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:staggered="http://schemas.android.com/apk/res-auto">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/cs_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.veclink.waterfall.views.StaggeredGridView android:id="@id/staggeredGridView1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout" android:layout_below="@id/cs_title_bar" android:scrollbarFadeDuration="1000" staggered:drawSelectorOnTop="true" staggered:numColumns="2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:background="@drawable/claute_cal_bg" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/calculate_cal_title_textszie" android:textColor="@color/calculate_cal_title_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/calculate_cal_title" android:drawableLeft="@drawable/cal_icon" android:drawablePadding="15.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:id="@id/total_cal_value" android:text="5200" style="@style/calulate_cal_vaule_text_style" />
+                <TextView android:text="-" style="@style/calulate_cal_vaule_text_style" />
+                <TextView android:id="@id/cost_cal_value" android:text="5000" style="@style/calulate_cal_vaule_text_style" />
+                <TextView android:text="=" style="@style/calulate_cal_vaule_text_style" />
+                <TextView android:textSize="@dimen/calculate_cal_result_textsize" android:textColor="@color/calculate_cal_result_textcolor" android:id="@id/result_cal_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="200" />
+                <TextView android:layout_marginLeft="10.0dip" android:text="kcal" android:singleLine="true" style="@style/calulate_cal_vaule_text_style" />
+            </LinearLayout>
+            <TextView android:textSize="15.0dip" android:gravity="center_vertical" android:layout_marginTop="10.0dip" android:text="@string/str_food_manager_express" style="@style/calulate_cal_vaule_text_style" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

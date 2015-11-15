@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/register_layout_bg_color" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/rel_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/settings_item_margin" android:layout_marginTop="30.0dip" android:layout_marginRight="@dimen/settings_item_margin">
+        <TextView android:textSize="@dimen/text_size_h2" android:textColor="@color/q2_text_orange_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_send_email_reset_pwd" />
+        <TextView android:textSize="@dimen/text_size_h5" android:textColor="@color/q2_text_dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/str_send_email_reset_pwd_tip_1" />
+        <TextView android:textSize="@dimen/text_size_h5" android:textColor="@color/q2_text_dark_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/str_send_email_reset_pwd_tip_2" />
+    </LinearLayout>
+</LinearLayout>

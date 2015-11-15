@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/sync_layout_bg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/rel_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.veclink.healthy.view.BluetoothConnAnimView android:layout_gravity="center" android:id="@id/conn_anim_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/text_size_h3" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/update_remind_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/remind_list_margin" android:layout_marginRight="@dimen/remind_list_margin" android:layout_marginBottom="60.0dip" android:text="@string/str_isupdateing_cannot_exit" />
+</FrameLayout>

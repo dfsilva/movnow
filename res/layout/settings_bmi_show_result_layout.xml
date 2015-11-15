@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bmi_layout_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/progress_layout" android:background="@drawable/bmi_bar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bmi_result_progressbar_margin_top">
+        <ImageView android:id="@id/progress_bar_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bmi_bar_progress_point" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/result_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/progress_layout" android:layout_alignLeft="@id/progress_layout" android:layout_alignRight="@id/progress_layout">
+        <TextView android:text="18.5" style="@style/bmi_result_text_style" />
+        <TextView android:text="24.9" style="@style/bmi_result_text_style" />
+        <TextView android:text="29.9" style="@style/bmi_result_text_style" />
+        <TextView style="@style/bmi_result_text_style" />
+    </LinearLayout>
+    <ImageView android:id="@id/result_remind_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bmi_result_point" android:layout_below="@id/result_text_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/result_remind_layout" android:background="@drawable/bmi_result_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_below="@id/result_remind_point" android:layout_alignLeft="@id/progress_layout" android:layout_alignRight="@id/progress_layout">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bmi_result_text_magin_left_right" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/bmi_result_text_magin_left_right">
+            <TextView android:textSize="@dimen/bmi_result_big_textsize" android:textColor="@color/bmi_result_big_text_color" android:id="@id/result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cs_BMI" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <Button android:textSize="@dimen/bmi_result_big_textsize" android:textColor="@color/white" android:id="@id/bmi_test_btn" android:background="@drawable/bmi_test_btn_selector" android:padding="@dimen/button_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bmi_test" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        </RelativeLayout>
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bmi_result_remind_textsize" android:textColor="@color/bmi_result_remind_textcolor" android:id="@id/bmi_result_remind_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bmi_result_text_magin_left_right" android:layout_marginTop="@dimen/bmi_result_progressbar_margin_top" android:layout_marginRight="@dimen/bmi_result_text_magin_left_right" android:text="@string/str_settings_bmi_underweight_text" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/title_bar_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@id/fl_login_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_h5" android:textColor="@color/title_bar_title_color" android:id="@id/tv_left" android:background="@drawable/healthy_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_bar_back_magin_left" />
+            <TextView android:textSize="@dimen/title_bar_title_textsize" android:textColor="@color/titebar_text_color_selector" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_bar_title_magin_left" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/title_bar_title_textsize" android:textColor="@color/title_bar_title_color" android:gravity="center" android:layout_gravity="right|center" android:id="@id/tv_rigth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/title_bar_right_button_margin_right" />
+    </FrameLayout>
+</RelativeLayout>

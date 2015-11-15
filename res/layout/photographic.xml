@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/MyLinearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <SurfaceView android:gravity="center" android:id="@id/surfaceView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/Bottom_menu" android:background="@drawable/photographs_bottom" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/photoView" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/photo" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/settingView" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/home_navigation_setting" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/btn_camera_switch" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/camera_switch" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/SettingShootlayout" android:background="@drawable/burst_set_end" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="190.0dip" android:layout_marginBottom="-10.0dip" android:layout_weight="0.24" android:layout_above="@id/Bottom_menu" android:layout_alignParentLeft="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/ShootView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/Shoot_number" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <Button android:textColor="@android:color/white" android:id="@id/ShootThreeButton" android:background="@drawable/continuous_unchecked" android:layout_width="85.0dip" android:layout_height="40.0dip" android:text="@string/ShootThreeButton" android:onClick="MyOnclick" />
+            <Button android:textColor="@android:color/white" android:id="@id/ShootFiveButton" android:background="@drawable/continuous_unchecked" android:layout_width="85.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/ShootFiveButton" android:onClick="MyOnclick" />
+            <Button android:textColor="@android:color/white" android:id="@id/ShootTenButton" android:background="@drawable/continuous_unchecked" android:layout_width="85.0dip" android:layout_height="40.0dip" android:text="@string/ShootTenButton" android:onClick="MyOnclick" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@android:color/white" android:id="@id/ShootIntervalView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/Shoot_interval" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <Button android:textColor="@android:color/white" android:id="@id/ShootIntervalTwoButton" android:background="@drawable/continuous_unchecked" android:layout_width="85.0dip" android:layout_height="40.0dip" android:text="@string/ShootIntervalTwoButton" android:onClick="MyOnclick" />
+            <Button android:textColor="@android:color/white" android:id="@id/ShootIntervalThreeButton" android:background="@drawable/continuous_unchecked" android:layout_width="85.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/ShootIntervalThreeButton" android:onClick="MyOnclick" />
+            <Button android:textColor="@android:color/white" android:id="@id/ShootIntervalfourButton" android:background="@drawable/continuous_unchecked" android:layout_width="85.0dip" android:layout_height="40.0dip" android:text="@string/ShootIntervalFourButton" android:onClick="MyOnclick" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/q2_bg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/rl_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/remind_item_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_bar_back_magin_left" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/title_bar_back_magin_left">
+        <EditText android:gravity="center_vertical" android:id="@id/phone_edit" android:background="@drawable/transparent" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/pls_input_phone_number" android:layout_weight="1.0" android:inputType="numberDecimal" />
+        <Button android:enabled="false" android:id="@id/add_btn" android:background="@drawable/add_photo_number_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/title_bar_right_button_margin_right" android:text="@string/str_add_calorie" />
+    </LinearLayout>
+    <TextView android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_bar_back_magin_left" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/title_bar_back_magin_left" android:layout_marginBottom="8.0dip" android:text="@string/str_family_number_count" />
+    <ListView android:id="@id/numberListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/title_bar_back_magin_left" android:layout_marginRight="@dimen/title_bar_back_magin_left" android:cacheColorHint="@drawable/transparent" android:divider="@null" android:dividerHeight="10.0dip" />
+</LinearLayout>

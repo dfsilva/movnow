@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bmi_layout_bg_color" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.veclink.movnow_q2.view.TitleBarRelativeLayout android:id="@id/cs_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+        <TextView android:textSize="@dimen/add_remind_title_textsize" android:textColor="@color/add_remind_title_textcolor" android:id="@id/cs_remind_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/add_remind_title_magin_left" android:layout_marginTop="@dimen/add_remind_title_magin_top" android:text="@string/cs_add_wake_up_remind" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wheelviews_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/add_remind_partline_magin" android:layout_marginTop="@dimen/add_remind_partline_magin" android:layout_marginRight="@dimen/add_remind_partline_magin" android:layout_below="@id/cs_remind_title">
+            <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_horizontal" android:id="@id/cs_hour_wheelview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.veclink.movnow_q2.view.wheel.WheelView android:layout_gravity="center_horizontal" android:id="@id/cs_minute_wheelview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/add_remind_title_textsize" android:textColor="@color/repeate_date_textcolor" android:id="@id/repeat_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/add_remind_partline_magin" android:text="@string/repeat_date" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/repeat_days" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/add_remind_partline_magin" android:layout_marginRight="@dimen/add_remind_partline_magin" />
+    <View android:background="@color/add_remind_partline_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/add_remind_partline_magin" />
+    <TextView android:textSize="@dimen/remind_tip_textsize" android:textColor="@color/remind_tip_textcolor" android:id="@id/cs_remind_tip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/add_remind_partline_magin" android:layout_marginRight="@dimen/add_remind_partline_magin" android:layout_weight="3.0" />
+</LinearLayout>

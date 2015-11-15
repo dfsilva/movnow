@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bmi_wheelview_item_textsize">20.0dip</dimen>
+    <dimen name="remind_wheelview_item_textsize">15.0dip</dimen>
+    <item type="dimen" name="login_layout_emty_weight">0.7</item>
+    <item type="dimen" name="walk_fragment_high_sportview_weight">2.0</item>
+    <item type="dimen" name="walk_fragment_high_sportimg_weight">1.1</item>
+    <item type="dimen" name="sleep_fragment_high_sleepview_weight">2.0</item>
+    <item type="dimen" name="sleep_fragment_high_sleepimg_weight">1.1</item>
+    <dimen name="sleep_time_text_size">20.0sp</dimen>
+</resources>

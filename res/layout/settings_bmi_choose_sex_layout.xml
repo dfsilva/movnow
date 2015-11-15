@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/choose_height_layout" android:background="@color/bmi_layout_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout">
+        <TextView android:textSize="@dimen/bmi_choose_title_textsize" android:textColor="@color/bmi_choose_title_textcolor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/bmi_choose_sex_title" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/male" android:background="@drawable/bmi_male_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/female" android:background="@drawable/bmi_female_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/bmi_boottom_btn_style">
+        <Button android:id="@id/sex_previous" android:background="@drawable/bmi_setting_back_step_btn_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onClick" />
+        <Button android:id="@id/sex_next" android:background="@drawable/bmi_setting_next_step_btn_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:onClick="onClick" />
+    </LinearLayout>
+</RelativeLayout>

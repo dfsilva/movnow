@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="bmi_wheelView_current_item_textsize">25</integer>
+    <integer name="remind_wheelview_current_item_textsize">20</integer>
+    <integer name="rebmi_wheelview_label_textsize">20</integer>
+    <integer name="rebmi_wheelview_label_big_textsize">20</integer>
+</resources>

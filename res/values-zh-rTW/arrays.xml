@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weekStrings">
+        <item>週日,</item>
+        <item>週一,</item>
+        <item>週二,</item>
+        <item>週三,</item>
+        <item>週四,</item>
+        <item>週五,</item>
+        <item>週六,</item>
+    </string-array>
+    <string-array name="height_unit_strarray">
+        <item>英呎</item>
+        <item>米</item>
+    </string-array>
+    <string-array name="weight_unit_strarray">
+        <item>磅</item>
+        <item>千克</item>
+    </string-array>
+</resources>
